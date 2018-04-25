@@ -1,0 +1,15 @@
+{
+  "name": "mua",
+  "version": "1.0.0",
+  "description": "Makeup artist website",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "scss": "node-sass main.scss style.css"
+  },
+  "author": "Maria Tryta",
+  "license": "ISC",
+  "dependencies": {
+    "node-sass": "^4.7.2"
+  }
+}

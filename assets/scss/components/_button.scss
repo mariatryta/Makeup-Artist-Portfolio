@@ -1,0 +1,22 @@
+@import "utils/mixins";
+.contact{
+    @extend %container;
+    @include flex($align-items: center);
+    margin:1em auto !important;
+    justify-content: center;
+    background-color: $medium-purple;
+    height:fit-content;
+    text-align: center;
+    display: block;
+    cursor: pointer;
+    transition: .25s all ease;
+    border-radius: 3px;
+    h3{
+        color: $white;
+        padding: 1%;
+        letter-spacing: .063em;
+    }
+    &:hover{
+        background-color: darken($color:$medium-purple, $amount: 5) ;
+    }
+}

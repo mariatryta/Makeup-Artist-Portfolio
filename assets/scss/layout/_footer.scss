@@ -1,0 +1,48 @@
+.footer {
+    width: 100%;
+    height: fit-content;
+    @include flex($align-items: stretch, $flex-direction:row);
+    justify-content: space-between;
+    background: $grey;
+    flex-wrap: wrap;
+    padding: 2% 6%;
+    @include phone(900px) {
+        @include flex($align-items: center, $flex-direction:column);
+        justify-content:space-between;
+        align-content: center;
+        padding: 0;
+        flex-wrap: nowrap;
+    }
+    .column {
+        text-align: center;  
+        &.map {
+            background-image: url(/images/map.png);
+            background-size: contain;
+            height: 40vh;
+            width:40%;
+            background-repeat: no-repeat;  
+            @include phone(900px) {
+                height: 6em;
+                width: 10em;
+            }
+        }
+        &.social {
+            width: 100%;
+            i{
+                padding: 0 2%;
+            }
+        }
+        &.text {
+            width: 25%;
+            @include flex($align-items: center, $flex-direction:row);   
+            @include phone(900px) {
+            width:70%;
+            margin: 3vh 0;
+            }
+            li{
+                @include list-style(none,block)
+            }
+        }
+    }
+}
+

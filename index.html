@@ -1,0 +1,152 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+
+    <link rel="stylesheet" href="assets/css/main.css">
+    <link rel="stylesheet" href="https://unpkg.com/flickity@2/dist/flickity.min.css">
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.0.8/css/all.css" integrity="sha384-3AB7yXWz4OeoZcPbieVW64vVXEwADiYyAEhwilzWsLw+9FgqpyjjStpPnpBO8o8S"
+        crossorigin="anonymous">
+
+    <title>Jane Does Makeup</title>
+</head>
+
+<body>
+    <header>
+        <nav>
+            <ul class="half-nav">
+                <li>
+                    <a href="#packages" class="link">Packages</a>
+                    <div class="highlight 1"></div>
+                </li>
+                <li>
+                    <a href="#about" class="link">Jane Doe</a>
+                    <div class="highlight 2"></div>
+
+                </li>
+            </ul>
+            <div class="image logo">
+                <img src="/images/logoready.png" alt="Jane Does Makeup">
+            </div>
+            <ul class="half-nav">
+                <li>
+                    <a href="gallery.html" class="link"> Gallery</a>
+                    <div class="highlight"></div>
+                </li>
+                <li>
+                    <a href="#contact-me" class="link"> Contact</a>
+                    <div class="highlight"></div>
+                </li>
+            </ul>
+        </nav>
+    </header>
+    <div class="main">
+    <div class="carousel" data-flickity>
+        <div class="carousel-cell"></div>
+        <div class="carousel-cell"></div>
+        <div class="carousel-cell"></div>
+        <div class="carousel-cell"></div>
+    </div>
+    </div>
+
+    <section class="services" id="packages">
+        <h1>Packages</h1>
+        <div class="boxes">
+            <div class="box">
+                <h2>Special Ocassions</h2>
+                <li class="price">$1000+</li>
+                <li>Trial</li>
+                <li>Makeup</li>
+                <li>Light hair styling</li>
+                <li>Tattoo/Body/Scar Cover-up</li>
+            </div>
+            <div class="box">
+                <h2>Weddings</h2>
+                <li class="price">$1500+</li>
+                <li>Bridal Trial</li>
+                <li>Bridal makeup</li>
+                <li>Bridal party</li>
+                <li>Male Grooming </li>
+            </div>
+            <div class="box">
+                <h2>Lessons</h2>
+                <li class="price">$50+/Lesson</li>
+                <li>Bridal Makeup</li>
+                <li>Special ocassions makeup</li>
+                <li>Editorial makeup</li>
+                <li>Group or single makeup class</li>
+            </div>
+        </div>
+
+    </section>
+
+    <div class="contact button" id="contact-me">
+        <h3>Contact me now to discuss ...</h3>
+    </div>
+    <hr>
+    <section class="about-me" id="about">
+        <div class="about-me-wrapper">
+            <div class="column image">
+            </div>
+            <div class="column info">
+                <h1>Jane Doe</h1>
+                <h3>Profesional freelance makeup artist</h3>
+                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Ex possimus nostrum repudiandae illo dolorum beatae!</p>
+            </div>
+            <div class="column image">
+            </div>
+        </div>
+    </section>
+    <hr>
+    <section class="footer">
+        <div class="column text">
+            <ul>
+                <li>City, State, Zip: Peoria, Illinois(IL), 61602</li>
+                <li>Street: 1750 Jail Drive</li>
+                <li>Mobile: 708-541-1189</li>
+            </ul>
+        </div>
+        <div class="column map">
+        </div>
+        <div class="column text">
+            <ul>
+                <li>Email: info@janedoesmakeup.com</li>
+                <li>Skype: JaneD</li>
+                <li>instagram: @JaneDoesMakeup</li>
+            </ul>
+        </div>
+
+        <div class="column social">
+            <a href="">
+                <i class="fab fa-facebook-square"></i>
+            </a>
+            <a href="">
+                <i class="fab fa-twitter-square"></i>
+            </a>
+            <a href="">
+                <i class="fab fa-instagram"></i>
+            </a>
+        </div>
+    </section>
+    <script src="https://unpkg.com/flickity@2/dist/flickity.pkgd.min.js"></script>
+    <script>
+        let highlight = document.querySelectorAll('.highlight');
+        const a_tag = document.querySelectorAll('.link');
+
+        a_tag.forEach(function (a, i) {
+            a.addEventListener('mouseover', function () {
+                highlight[i].style.display = 'block';
+            })
+        });
+        a_tag.forEach(function (a, i) {
+            a.addEventListener('mouseout', function () {
+                highlight[i].style.display = 'none';
+            })
+        });
+    </script>
+</body>
+
+</html>

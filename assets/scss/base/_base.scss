@@ -1,0 +1,57 @@
+@import "base/colors";
+@import "base/typography";
+
+body {
+    color: $black;
+    background-color: $white;
+    font-family: $ff-sss;
+    line-height:1.6;
+    font-size:1rem;
+}
+img{
+    max-width: 100%;
+}
+
+h1{
+    color: $black;
+    font-family: $ff-c;
+    line-height: 1;
+    font-size: 2.5em;
+    background-image: url(/images/stroke1.png);
+    background-repeat: no-repeat;
+    width: fit-content;
+    margin: auto;
+    padding: 0 3%;
+    background-size: 100% auto;
+    display: table;
+
+}
+
+h2,h3{
+ font-family: $ff-ss;
+    font-size: 1.875;
+    line-height: 1;
+    margin: 0 auto;
+
+}
+p {
+    margin: 0 auto;
+}
+a{
+    text-decoration: none;
+    outline: none;
+    color: $grey;
+    position: relative;
+    width: 100%;
+    height: 100%;
+}
+    
+hr{
+    border: none;
+}
+i{
+    font-size: 2em;
+    padding: 0 1%;
+    color: $light-purple;
+
+}

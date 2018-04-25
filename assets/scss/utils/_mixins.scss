@@ -1,0 +1,44 @@
+@mixin list-style($style, $display) {
+    list-style: $style;
+    display: $display;
+}
+
+
+@mixin overlay ($url, $y, $x) {
+    &:after{
+        content: "";
+        position: absolute;
+        height: 100%;
+        width: 100%;
+        background-color: rgba($dark-purple, $alpha: 0.6);
+        z-index: -1;
+        top: 0;
+        left: 0;
+        filter: blur(3px)
+    }
+    &:before {
+        content: "";
+        position: absolute;
+        z-index: -2;
+        display: block;
+        top: 0;
+        left: 0; 
+        height: 100%;
+        width: 100%;
+        background-position-y: $y;
+        background-position-x: $x;
+        background-image: $url;
+        filter: blur(3px)
+}
+}
+@mixin flex($align-items, $display:flex, $flex-direction:row) {
+    display: $display;
+    flex-direction: $flex-direction;
+    align-items: $align-items;
+}
+
+@mixin phone($screenwidth) {
+    @media screen and (max-width: $screenwidth) {
+        @content
+    }
+}

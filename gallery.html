@@ -1,0 +1,115 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+
+    <link rel="stylesheet" href="assets/css/main.css">
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.0.8/css/all.css" integrity="sha384-3AB7yXWz4OeoZcPbieVW64vVXEwADiYyAEhwilzWsLw+9FgqpyjjStpPnpBO8o8S"
+        crossorigin="anonymous">
+
+    <title>Jane Does Makeup</title>
+</head>
+
+<body>
+    <header>
+            <nav>
+                    <ul class="half-nav">
+                        <li>
+                            <a href="/#packages" class="link">Packages</a>
+                            <div class="highlight 1"></div>
+                        </li>
+                        <li>
+                            <a href="/#about" class="link">Jane Doe</a>
+                            <div class="highlight 2"></div>
+        
+                        </li>
+                    </ul>
+                    <div class="image logo">
+                        <img src="/images/logoready.png" alt="Jane Does Makeup">
+                    </div>
+                    <ul class="half-nav">
+                        <li>
+                            <a href="gallery.html" class="link"> Gallery</a>
+                            <div class="highlight"></div>
+                        </li>
+                        <li>
+                            <a href="/#contact-me" class="link"> Contact</a>
+                            <div class="highlight"></div>
+                        </li>
+                    </ul>
+                </nav>
+    </header>
+    <section class="showcase">
+        <h1>Gallery / Portfolio</h1>
+        <p>I have been working with over 50+ clients all over USA. I have worked with several brands and celebrities like Puma
+            or Loreal. My philosophy is that a great look lies in creating innovative, signature, and wearable looks unique
+            to the individual. I love every challenge and go above and beyong to satisfy my client needs. Contact me to see
+            if we are a match!</p>
+
+        <div class="carousel" data-flickity='{ "fullscreen": true, "lazyLoad": 2 }'>
+            <img class="carousel-image" data-flickity-lazyload="https://cdn.pixabay.com/photo/2018/03/12/20/57/woman-3220835_960_720.jpg" />
+            <img class="carousel-image" data-flickity-lazyload="https://source.unsplash.com/collection/1132722" />
+            <img class="carousel-image" data-flickity-lazyload="https://cdn.pixabay.com/photo/2016/11/22/10/47/girl-1848947_960_720.jpg" />
+            <img class="carousel-image" data-flickity-lazyload="https://cdn.pixabay.com/photo/2018/03/12/20/57/portrait-3220832_960_720.jpg" />
+            <img class="carousel-image" data-flickity-lazyload="https://cdn.pixabay.com/photo/2018/01/21/14/16/woman-3096664_960_720.jpg" />
+            <img class="carousel-image" data-flickity-lazyload="https://source.unsplash.com/collection/1132722" />
+            <img class="carousel-image" data-flickity-lazyload="https://cdn.pixabay.com/photo/2018/02/12/12/02/nice-3148140_960_720.jpg" />
+            <img class="carousel-image" data-flickity-lazyload="https://images.pexels.com/photos/531070/pexels-photo-531070.jpeg?auto=compress&cs=tinysrgb&dpr=2&h=650&w=940" />
+        </div>
+    </section>
+
+    <hr>
+    <section class="footer">
+        <div class="column text">
+            <ul>
+                <li>City, State, Zip: Peoria, Illinois(IL), 61602</li>
+                <li>Street: 1750 Jail Drive</li>
+                <li>Mobile: 708-541-1189</li>
+            </ul>
+        </div>
+        <div class="column map">
+        </div>
+        <div class="column text">
+            <ul>
+                <li>Email: info@janedoesmakeup.com</li>
+                <li>Skype: JaneD</li>
+                <li>instagram: @JaneDoesMakeup</li>
+            </ul>
+        </div>
+
+        <div class="column social">
+            <a href="">
+                <i class="fab fa-facebook-square"></i>
+            </a>
+            <a href="">
+                <i class="fab fa-twitter-square"></i>
+            </a>
+            <a href="">
+                <i class="fab fa-instagram"></i>
+            </a>
+        </div>
+    </section>
+    <script src="/assets/js/flickity.js"></script>
+    <script src="/assets/js/fullscreen.js"></script>
+    <script>
+        // menu highlight
+        let highlight = document.querySelectorAll('.highlight');
+        const a_tag = document.querySelectorAll('.link');
+
+        a_tag.forEach(function (a, i) {
+            a.addEventListener('mouseover', function () {
+                highlight[i].style.display = 'block';
+            })
+        });
+        a_tag.forEach(function (a, i) {
+            a.addEventListener('mouseout', function () {
+                highlight[i].style.display = 'none';
+            })
+        });
+    </script>
+</body>
+
+</html>

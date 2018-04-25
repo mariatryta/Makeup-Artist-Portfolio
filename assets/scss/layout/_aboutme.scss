@@ -1,0 +1,52 @@
+.about-me {
+    @extend %container;
+    border-color: rgba($dark-purple, $alpha: 0.7);
+    border-style: solid;
+    width: 100%;
+    height: fit-content;
+    @include flex($align-items: center, $flex-direction:row);
+    justify-content: center;
+    .about-me-wrapper {
+        @include flex($align-items: stretch, $flex-direction:row);
+        justify-content: space-evenly;
+        height: 100%;
+        width: auto;
+        text-align: center;
+        padding: 1em;
+        @include phone (600px){
+            @include flex($align-items:center, $display:flex, $flex-direction:column);
+        }
+    }
+}
+
+.info {
+    @include flex($align-items: stretch, $flex-direction:column);
+    color: $black;
+    padding: 1% 3%;
+    justify-content: center;
+    height: 100%;
+    p {
+        margin: 0 auto;
+        text-align: center;
+    }
+    h2 {
+        color: $black;
+    }
+}
+
+.column{
+    &.image{
+        height:auto;
+        width: 35%;
+        padding: 1%;
+        background-image: url(/images/jane2.jpg);
+        background-position-y: 40%;
+        background-position-x: 40%;
+
+    }
+    @include phone (600px){
+        &.image{
+            display: none;
+        }
+    }
+}
